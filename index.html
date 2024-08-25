@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content-wrapper">
+        <div class="heading">
+        <h1>TIC-TAC-TOE</h1>
+        <p>Hi! This is Saketh. This is my first javascript project, hope you like it :)</p>
+        <p>Click on new game to begin</p>
+        <p id="typeofgame" class="hide">2 - Player</p>
+    </div>
+    
+    
+    <div class="options">
+        <button id="new-game">New Game</button>
+        <button id="reset">Reset</button>
+    </div>
+    <div class="game-container">
+        <button class="box" disabled="true"></button>
+        <button class="box" disabled="true"></button>
+        <button class="box" disabled="true"></button>
+        <button class="box" disabled="true"></button>
+        <button class="box" disabled="true"></button>
+        <button class="box" disabled="true"></button>
+        <button class="box" disabled="true"></button>
+        <button class="box" disabled="true"></button>
+        <button class="box" disabled="true"></button>
+    </div>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+       </div>
+</div>
+    <div id="popup-window" class="popup-window">
+        <p>Select Game Mode</p>
+        <!-- Radio Button Options -->
+    <div class="radio-options">
+        <label>
+            <input type="radio" name="game-mode" value="2-player" checked> 2 Player
+        </label>
+        <label>
+            <input type="radio" name="game-mode" value="vs-computer"> vs Computer
+        </label>
+    </div>
+    
+    <!-- Buttons -->
+    <div class="popup-buttons">
+        <button id="continue-button">Continue</button>
+        <button id="cancel-button" onclick="hidePopup()">Cancel</button>
+    </div>
+</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
