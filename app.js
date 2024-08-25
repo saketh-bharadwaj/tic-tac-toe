@@ -8,7 +8,7 @@ let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 let typeofgame=document.getElementById("typeofgame")
 
-let turnO = false; //playerX, playerO
+let turnO = true; //playerX, playerO
 let count = 0; //To Track Draw
 let isXStarting = true;
 
